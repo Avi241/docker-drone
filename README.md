@@ -4,8 +4,6 @@ Testing Drone Simulation in dcoker
 # Setting up the workspace on users computer
 
     mkdir -p drone/home
-    cd drone/home
-    cd
 
    # enable access to xhost from the container
     xhost +
