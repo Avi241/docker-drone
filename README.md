@@ -1,6 +1,26 @@
 # docker-drone
 Testing Drone Simulation in docker
 
+# Installation 
+## Docker
+
+You can find these installation instructions [here](https://docs.px4.io/master/en/test_and_ci/docker.html).
+
+## Installing Docker
+
+#### Install docker using [convenience script](https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-convenience-script)
+    
+    sudo apt-get install curl
+    curl -fsSL get.docker.com -o get-docker.sh
+    sudo sh get-docker.sh
+
+#### Steps to use docker without having to use sudo
+    
+    sudo groupadd docker
+    # Add your user to the docker group.
+    sudo usermod -aG docker $USER
+    # Close the terminal or restart computer to see effects
+
 # Setting up the workspace on users computer
 
     mkdir -p drone/home
@@ -74,3 +94,10 @@ Testing Drone Simulation in docker
     cd ~/XTDrone/control/keyboard
     python multirotor_keyboard_control.py iris 1 vel
 
+   # Steps to control Drone
+    increse the upward speed greater than 0.30 by pressing i
+    press b for offboard
+    press t to arm the drone
+    drone will rise to some height now press s to hover.
+    now control the direction of drone with w,x,a,d (forward,backward,left,right)
+    press s to stop it to any position.
