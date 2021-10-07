@@ -46,6 +46,8 @@ You can find these installation instructions [here](https://docs.px4.io/master/e
    ## remove the container
     docker rm drone
    ## Open new terminal and build a different docker container
+    sudo rm -r ~/drone
+    mkdir -p drone/home
     xhost + 
     docker run -it --privileged --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" -v ~/drone/home:/home/:rw --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" -p 14556:14556/udp --name=drone avi241/xtdrone bash
    ## install ubuntu drivers
