@@ -1,5 +1,5 @@
 # docker-drone
-Testing Drone Simulation in dcoker
+Testing Drone Simulation in docker
 
 # Setting up the workspace on users computer
 
