@@ -39,26 +39,26 @@ You can find these installation instructions [here](https://docs.px4.io/master/e
    
    # If gazebo is unable to run you need to install the nvidia drivers specific to your system . Follow the below steps.
    
-   ## exit from the bash shell of comtainer
+   ### exit from the bash shell of comtainer
     exit
-   ## stop the container
+   ### stop the container
     docker stop drone
-   ## remove the container
+   ### remove the container
     docker rm drone
-   ## Open new terminal and build a different docker container
+   ### Open new terminal and build a different docker container
     sudo rm -r ~/drone
     mkdir -p drone/home
     xhost + 
     docker run -it --privileged --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" -v ~/drone/home:/home/:rw --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" -p 14556:14556/udp --name=drone avi241/xtdrone bash
-   ## install ubuntu drivers
+   ### install ubuntu drivers
     apt-get install ubuntu-drivers-common
-   ## check your Nvidia drivers
+   ### check your Nvidia drivers
     export LC_ALL=C.UTF-8
     export LANG=C.UTF-8
     ubuntu-drivers devices
-   ## Install Nvidia drivers
+   ### Install Nvidia drivers
     ubuntu-drivers autoinstall
-   ## Try running gazebo again
+   ### Try running gazebo again
     gazebo
     
    # open a new bash shell of this container
