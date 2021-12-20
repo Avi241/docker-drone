@@ -51,6 +51,7 @@ You can find these installation instructions [here](https://docs.px4.io/master/e
     xhost + 
     docker run -it --privileged --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" -v ~/drone/home:/home/:rw --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" -p 14556:14556/udp --name=drone avi241/xtdrone bash
    ### install ubuntu drivers
+    apt-get update
     apt-get install ubuntu-drivers-common
    ### check your Nvidia drivers
     export LC_ALL=C.UTF-8
