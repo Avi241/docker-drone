@@ -19,7 +19,7 @@ You can find these installation instructions [here](https://docs.px4.io/master/e
     sudo groupadd docker
     # Add your user to the docker group.
     sudo usermod -aG docker $USER
-    # Close the terminal or restart computer to see effects
+    # Restart computer to see effects
 
 # Setting up the workspace on users computer
 
